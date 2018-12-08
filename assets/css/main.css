@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #0c0850;
+    color: white;
+
+    padding: 15px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+h1 span {
+    margin-right: 7px;
+}
+
+nav {
+    background-color: transparent;
+    width: 75%;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
