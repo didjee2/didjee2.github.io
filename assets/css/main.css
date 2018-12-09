@@ -1,11 +1,16 @@
-html, body {
-    height: 100%;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -142,6 +147,34 @@ nav ul li {
 
 .skills li.average:hover, .skills li.average:focus {
     background: #ffbf26;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: rgb(41, 46, 51);
+    color: white;
+    padding: 15px;
+}
+
+.footerblock {
+    display: flex;
+}
+
+.footerblock h3 {
+    font-size: 2.2rem;
+}
+
+.footerblock img {
+    width: 200px;
+}
+
+.footerblock li {
+    width: 25%;
+    text-align: center;
 }
 
 @media (max-width: 725px) {
