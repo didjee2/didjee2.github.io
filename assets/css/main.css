@@ -153,6 +153,18 @@ main {
     flex: 1 0 auto;
 }
 
+#about p {
+    font-size: 1.5rem;
+}
+
+.note {
+    font-size: .9rem;
+}
+
+dbs-special {
+    color: #d48e20;
+}
+
 footer {
     flex-shrink: 0;
     background-color: rgb(41, 46, 51);

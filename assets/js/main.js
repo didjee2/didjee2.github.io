@@ -3,7 +3,20 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    document.querySelector(".skills").addEventListener('click', onSkillClick);
+    document.querySelector('dbs-special').addEventListener('click', onSpecialClick);
+    document.querySelector('.skills').addEventListener('click', onSkillClick);
+}
+
+function onSpecialClick(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    let target = event.target;
+
+    if (target.hasAttribute("href")) {
+        let href = target.getAttribute("href");
+
+        openLink(href, '_blank');
+    }
 }
 
 function onSkillClick(event) {
@@ -12,5 +25,9 @@ function onSkillClick(event) {
     }
     let text = event.target.innerText.replace('#', '%23');
 
-    window.open('https://www.ecosia.org/search?q=' + text, '_blank');
+    openLink('https://www.ecosia.org/search?q=' + text, '_blank');
+}
+
+function openLink(url, action = '_self') {
+    window.open(url, action);
 }
