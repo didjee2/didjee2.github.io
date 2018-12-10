@@ -186,6 +186,7 @@ footer {
 
 .footerblock li {
     width: 25%;
+    margin: 0 10px;
 }
 
 .footerlower {
@@ -219,6 +220,10 @@ footer {
     }
 
     .info p {
+        font-size: 1.3rem;
+    }
+
+    #about p {
         font-size: 1.3rem;
     }
 
