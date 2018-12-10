@@ -174,7 +174,22 @@ footer {
 
 .footerblock li {
     width: 25%;
-    text-align: center;
+}
+
+.footerlower {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: solid 1px rgba(255, 255, 255, 0.50);
+}
+
+@media (max-width: 1200px) {
+    .footerblock li:first-of-type {
+        display: none;
+    }
+
+    .footerblock li {
+        width: 33%;
+    }
 }
 
 @media (max-width: 725px) {
@@ -193,6 +208,14 @@ footer {
 
     .info p {
         font-size: 1.3rem;
+    }
+
+    .footerblock {
+        flex-wrap: wrap;
+    }
+
+    .footerblock li {
+        width: 100%;
     }
 }
 
