@@ -99,6 +99,7 @@ nav ul li {
 .info p {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .links {
@@ -153,6 +154,19 @@ main {
     flex: 1 0 auto;
 }
 
+#about p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.note {
+    font-size: .9rem;
+}
+
+dbs-special {
+    color: #d48e20;
+}
+
 footer {
     flex-shrink: 0;
     background-color: rgb(41, 46, 51);
@@ -174,7 +188,23 @@ footer {
 
 .footerblock li {
     width: 25%;
-    text-align: center;
+    margin: 0 10px;
+}
+
+.footerlower {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: solid 1px rgba(255, 255, 255, 0.50);
+}
+
+@media (max-width: 1200px) {
+    .footerblock li:first-of-type {
+        display: none;
+    }
+
+    .footerblock li {
+        width: 33%;
+    }
 }
 
 @media (max-width: 725px) {
@@ -193,6 +223,18 @@ footer {
 
     .info p {
         font-size: 1.3rem;
+    }
+
+    #about p {
+        font-size: 1.3rem;
+    }
+
+    .footerblock {
+        flex-wrap: wrap;
+    }
+
+    .footerblock li {
+        width: 100%;
     }
 }
 
