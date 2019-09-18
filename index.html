@@ -27,7 +27,7 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About me</a>
+            <a class="nav-link" href="#about">About Me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">My Projects</a>
@@ -53,20 +53,33 @@
   </header>
   <main class="container">
     <section id="about">
-      <h2>About me</h2>
+      <h2>About Me</h2>
 
-      <p>
-        Hi, my name is Dieter Blancke and I'm a
-        <age birth="29-11-1999" /> year old Java Developer.
-        I finished in music school. I love art, but I ended up studying Veterinary medicine. On top of that I
-        love
-        playing video games since my childhood.
-        Right now I am in love with Fortnite, but I also play all kinds of other games, such as League Of
-        Legends.
-        I love talking with other people during my
-        <a href="https://www.twitch.tv/itssky/" target="_blank">Twitch stream</a>, make sure to check it out.
-        You can find some awesome gameplay, mukbang & lots of chattings with viewers in my streams.
-      </p>
+      <div>
+        <div>
+          <img src="images/dieter_1.jfif" title="Image of Dieter Blancke" alt="Image of Dieter Blancke" />
+        </div>
+
+        <div class="aboutwrapper">
+          <p>
+            Hi, my name is Dieter Blancke and I'm a <age birth="1999-11-29"></age> year old Java Developer. <br />
+            I am currently studying <a href="https://www.howest.be/en/programmes/applied-informatics">Applied Informatics</a>
+            (choice: Software Engineer) at Howest in Belgium. <br />
+            By now, programming has been a part of my life for over 5 years now, mostly in Java & Web Development,
+            however I've also had multiple projects in several different programming languages. <br /><br />
+            You can also find me playing games from time to time, the main games I play are:
+          </p>
+          <ul>
+            <li><strong>League of Legends:</strong> The S0ulRipp3r</li>
+            <li><strong>Counter-Strike: Global Offensive:</strong> The S0ulRipp3r</li>
+            <li><strong>MineCraft:</strong> didjee2</li>
+            <li><strong>Hytale</strong> (once it comes out &#128522; )</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>My Projects</h2>
     </section>
   </main>
   <footer>
@@ -86,6 +99,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/luxon@1.17.3/build/global/luxon.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/ageparser.js"></script>
 
