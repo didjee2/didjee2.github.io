@@ -141,7 +141,7 @@ main section p {
 
 #skills {
   justify-content: center !important;
-  margin-top: 25px;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -188,7 +188,14 @@ main section p {
 
 .bar .fill {
   height: 100%;
+}
+
+.bar .fill span {
+  display: block;
+  height: 100%;
   background: #00a1a7;
+  animation: expandWidth 3s ease-in-out;
+  animation-fill-mode: both;
 }
 
 .bar .amount {
@@ -327,4 +334,14 @@ footer .links a:hover {
         margin-left: 0;
         margin-bottom: 25px;
     }
+}
+
+@keyframes expandWidth {
+   0% {
+     width: 0;
+   }
+
+   100% {
+     width: 100%;
+   }
 }
